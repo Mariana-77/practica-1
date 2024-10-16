@@ -1,0 +1,25 @@
+
+    <section class="contact">
+        <h1>Contáctanos</h1>
+        <form action="{{ url_for('contact') }}" method="POST">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Enviar</button>
+        </form>
+        <div class="contact-info">
+            <p>Dirección: Calle Murillo 356, Ciudad de La Paz</p>
+            <p>Teléfono: 2380872</p>
+            <p>Correo: lechLuns@gmail.com</p>
+        </div>
+        <div class="map">
+            <img src="https://via.placeholder.com/300x200" alt="Mapa">
+        </div>
+    </section>
+
